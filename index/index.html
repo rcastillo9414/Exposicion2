@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pagina web Ricardo Castillo</title>
+  <meta name="description" content="Página web responsiva construida con Bootstrap." />
+  <meta name="author" content="Ricardo Castillo" />
+  <meta name="theme-color" content="" />
+
+  <!-- Open Graph  -->
+  <meta property="og:title" content="Presentacion 2/ Proyecto integrador" />
+  <meta property="og:description" content="Presentacion de Bootstrap: grid, componentes, responsividad." />
+  <meta property="og:type" content="website" />
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <!-- Bootstrap Iconos -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  />
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- Header / Navbar  -->
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Navbar principal">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#inicio">Presentacion 2</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--  Bienvenida a la pagina  -->
+  <section id="inicio" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-6">
+          <h1 class="display-5 fw-bold">Ricardo Castillo Web Developer </h1>
+          <p class="lead mb-4">
+            Soy un programador apasionado por el desarollo web y la programacion, con experiencia en la creacion de aplicaciones y sitios Web   
+            Interactivos y fucionales. Me gusta aprender sobre nuevas tecnologias y lenguajes, junto con resolver problemas de manera eficiente.
+          </p>
+
+          <!-- Componente: Botones -->
+          <div class="d-flex gap-2">
+            <a class="btn btn-primary btn-lg" href="#servicios">
+              <i class="bi bi-grid-3x3-gap"></i> Ver servicios
+            </a>
+          </div>
+
+          <!-- Componente: Alerta  -->
+          <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+            <strong>Pagina Cargada Exitosamente</strong>.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <img class="img-fluid rounded-4 shadow-sm" src="../assets/img/hero.jpg" alt="Imagen principal" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Información/Servicios  -->
+<section id="servicios" class="py-5">
+  <div class="container">
+    <!-- Breadcrumb  -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="#inicio">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Servicios</li>
+      </ol>
+    </nav>
+
+    <header class="mb-4 text-center">
+      <h2 class="h1 fw-semibold">Servicios</h2>
+      <p class="text-secondary">
+        A continuación podrá encontrar los servicios que brindamos a nuestros clientes.
+      </p>
+      <!-- Botón para mostrar el modal -->
+      <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#demoModal">
+        <i class="bi bi-lightbulb"></i> Ver nuestra metodología
+      </button>
+    </header>
+
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="../assets/img/Responsivo.jpg" class="card-img-top" alt="Servicio 1" />
+          <div class="card-body">
+            <h3 class="card-title h5">Diseño Responsivo</h3>
+            <p class="card-text">
+              Creación de páginas web responsivas y atractivas utilizando HTML, CSS, JavaScript y frameworks como Vue y Bootstrap.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="../assets/img/automatizacion.jpg" class="card-img-top" alt="Servicio 2" />
+          <div class="card-body">
+            <h3 class="card-title h5">Automatización de tareas</h3>
+            <p class="card-text">
+              Creación de scripts para automatizar procesos repetitivos, análisis de datos y manejo de documentos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="../assets/img/Mantenimiento.jpg" class="card-img-top" alt="Servicio 3" />
+          <div class="card-body">
+            <h3 class="card-title h5">Actualización de páginas web</h3>
+            <p class="card-text">
+              Mejora, actualización y optimización de páginas web existentes.
+            </p>
+            <a href="#contacto" class="btn btn-outline-secondary btn-sm">
+              <i class="bi bi-chat-dots"></i> Contacto
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="demoModalLabel">Nuestra metodología</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        En nuestro proceso de desarrollo, comenzamos con la planificación y el diseño de las páginas,
+        definiendo los requisitos y creando bocetos visuales.
+        Luego, estructuramos las páginas utilizando Bootstrap para garantizar la responsividad y Vue
+        para agregar interactividad y funciones dinámicas.
+        Durante la fase de desarrollo, implementamos el código HTML, CSS y los componentes Vue,
+        asegurándonos de que todo funcione correctamente en diferentes dispositivos y navegadores.
+        Posteriormente, realizamos pruebas para detectar y corregir errores, optimizamos el rendimiento
+        y la experiencia del usuario, y finalmente desplegamos la página en un servidor.
+        Después del despliegue, realizamos un mantenimiento continuo, recogiendo feedback y mejorando
+        las páginas según las necesidades del proyecto.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <a href="#contacto" class="btn btn-primary">Contáctanos</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Portafolio grids -->
+<section id="portafolio" class="py-5 bg-light">
+  <div class="container">
+    <header class="mb-4 text-center">
+      <h2 class="h1 fw-semibold">Portafolio</h2>
+      <p class="text-secondary mb-0">Clientes que confian en nosotros</p>
+    </header>
+
+    <div class="row g-3">
+      <!-- Proyecto 1 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <div class="ratio ratio-4x3">
+            <img src="../assets/img/nutrivida.png" class="card-img-top rounded-3" alt="Proyecto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">NutriParaLaVida</h5>
+            <p class="card-text">Sistema de gestión nutricional y seguimiento de pacientes
+.</p>
+            <a href="https://nutriparalavida.com/productos" class="btn btn-primary btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <div class="ratio ratio-4x3">
+            <img src="../assets/img/uniformes.png" class="card-img-top rounded-3" alt="Proyecto 2">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Uniformes Centroamericanos S.A </h5>
+            <p class="card-text">Soliciones textiles, uniformes y una amplia gama de productos textiles.</p>
+            <a href="https://uniformescentroamericanos.com/" class="btn btn-primary btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <div class="ratio ratio-4x3">
+            <img src="../assets/img/estebancoach.png" class="card-img-top rounded-3" alt="Proyecto 3">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">CoachEsteban.com</h5>
+            <p class="card-text">Plataforma de coaching y desarrollo personal.</p>
+            <a href="https://www.coachesteban.com/" class="btn btn-primary btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 4 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <div class="ratio ratio-4x3">
+            <img src="../assets/img/hojancha.png" class="card-img-top rounded-3" alt="Proyecto 4">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Somos Hojancha</h5>
+            <p class="card-text">Permite descubrir, revelar y proyectar todas las bellezas que ofrece nuestro cantón para que aquellos turistas que no conocen se animen a visitarnos.</p>
+            <a href="https://somoshojancha.com/" class="btn btn-primary btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Carrusel -->
+  <section class="py-5" id="equipo">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-12 col-lg-5">
+          <h2 class="h1 fw-semibold">Testimonios</h2>
+          <p class="text-secondary">Puede encontrar comentarios sobre nuestros proyectos.</p>
+
+          <!-- Carrusel -->
+           
+            <div id="testimoniosCarousel" class="carousel slide carousel-fade rounded-3 shadow-sm overflow-hidden" data-bs-ride="carousel" data-bs-interval="3000">
+            
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img src="../assets/img/testimonio-1.png" class="d-block w-100" alt="Cliente 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/testimonio-2.png" class="d-block w-100" alt="Cliente 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/testimonio-3.png" class="d-block w-100" alt="Cliente 3" />
+              </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev" aria-label="Anterior">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next" aria-label="Siguiente">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              
+            </button>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-7">
+          <h3 class="h4">Nuestros colaboradores</h3>
+          <div class="row g-4">
+            <div class="col-12 col-md-6">
+              <div class="d-flex gap-3 align-items-center p-3 border rounded-3">
+                <i class="bi bi-person-circle fs-1 text-primary"></i>
+                <div>
+                  <div class="fw-semibold">Alex Rivera</div>
+                  <div class="text-secondary small">Frontend</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="d-flex gap-3 align-items-center p-3 border rounded-3">
+                <i class="bi bi-person-circle fs-1 text-primary"></i>
+                <div>
+                  <div class="fw-semibold">María López</div>
+                  <div class="text-secondary small">UI/UX</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="d-flex gap-3 align-items-center p-3 border rounded-3">
+                <i class="bi bi-person-circle fs-1 text-primary"></i>
+                <div>
+                  <div class="fw-semibold">David Salazar</div>
+                  <div class="text-secondary small">Backend/Fronend/AI Automatizacion</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="d-flex gap-3 align-items-center p-3 border rounded-3">
+                <i class="bi bi-person-circle fs-1 text-primary"></i>
+                <div>
+                  <div class="fw-semibold">Ricardo Castillo</div>
+                  <div class="text-secondary small">QA/Testing/PO</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Formulario de contacto   -->
+  <!-- Formulario de contacto   -->
+<section id="contacto" class="py-5 bg-light">
+  <div class="container">
+    <header class="mb-4 text-center">
+      <h2 class="h1 fw-semibold">Contacto</h2>
+      <p class="text-secondary">Formulario para solicitar servicios o consultas.</p>
+    </header>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        
+        <!-- ✅ Alerta de éxito oculta -->
+        <div id="alertaExito" class="alert alert-success alert-dismissible fade d-none" role="alert">
+          <strong>Mensaje enviado correctamente.</strong> Nos pondremos en contacto contigo pronto.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+        </div>
+
+        <!-- ✅ Formulario con ID corregido -->
+        <form id="formContacto" class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required />
+              <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" required />
+              <div class="invalid-feedback">Introduce un email válido.</div>
+            </div>
+            <div class="col-12">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea id="mensaje" class="form-control" rows="4" required></textarea>
+              <div class="invalid-feedback">El mensaje es obligatorio.</div>
+            </div>
+          </div>
+
+          <div class="d-flex gap-2 mt-4">
+            <button type="submit" class="btn btn-primary">
+              <i class="bi bi-send"></i> Enviar
+            </button>
+            <button type="reset" class="btn btn-outline-secondary">
+              Limpiar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Alertas por mensaje enviado -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("formContacto");
+  const alerta = document.getElementById("alertaExito");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    if (form.checkValidity()) {
+      alerta.classList.remove("d-none", "fade");
+      alerta.classList.add("show");
+
+      // Oculta alerta después de 5 segundos
+      setTimeout(() => {
+        alerta.classList.remove("show");
+        alerta.classList.add("fade", "d-none");
+        form.reset();
+      }, 5000);
+    }
+
+    form.classList.add("was-validated");
+  });
+});
+</script>
+
+
+  <!--  Footer   -->
+  <footer class="py-4 bg-dark text-light">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-12 col-md">
+          <span class="small">&copy; <span id="year"></span>Presentacion 2 / Proyecto integrador</span>
+        </div>
+        <div class="col-12 col-md-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item me-3"><a class="link-light text-decoration-none" href="#inicio">Inicio</a></li>
+            <li class="list-inline-item me-3"><a class="link-light text-decoration-none" href="#servicios">Servicios</a></li>
+            <li class="list-inline-item me-3"><a class="link-light text-decoration-none" href="#portafolio">Portafolio</a></li>
+            <li class="list-inline-item"><a class="link-light text-decoration-none" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-auto">
+          <a class="link-light me-2" href="#" aria-label="Instagram"><i class="bi bi-instagram fs-5"></i></a>
+          <a class="link-light me-2" href="#" aria-label="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+          <a class="link-light" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (CDN) + Popper -->
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
